@@ -82,7 +82,7 @@ const FilterModal = ({ onClose }: FilterModalProps) => {
                         sortBy === option.id ? 'border-brand-blue' : 'border-border'
                       }`}
                     >
-                      {sortBy === option.id && <div className="h-2 w-2 rounded-full bg-brand-blue" />}
+                      {sortBy === option.id && <div className="h-2 w-2 rounded-full bg-blue-700" />}
                     </div>
                     <span className="text-sm text-foreground">{option.label}</span>
                   </label>
@@ -97,7 +97,7 @@ const FilterModal = ({ onClose }: FilterModalProps) => {
                     <div
                       onClick={() => toggleTag(option.id)}
                       className={`h-4 w-4 rounded border-2 flex items-center justify-center cursor-pointer ${
-                        tags.includes(option.id) ? 'border-brand-blue bg-brand-blue' : 'border-border'
+                        tags.includes(option.id) ? 'border-brand-blue bg-blue-700' : 'border-border'
                       }`}
                     >
                       {tags.includes(option.id) && <span className="text-primary-foreground text-[10px]">✓</span>}

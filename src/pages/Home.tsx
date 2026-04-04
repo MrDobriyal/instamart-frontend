@@ -136,7 +136,7 @@ const HomePage = () => {
           {products.slice(0, 6).map((product) => (
             <div key={product.id} className="bg-background rounded-lg p-2 min-w-[120px] shrink-0 relative">
               {product.discount > 0 && (
-                <span className="absolute top-1 left-1 bg-brand-blue text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded">
+                <span className="absolute top-1 left-1 bg-blue-700 text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded">
                   {product.discount}% OFF
                 </span>
               )}

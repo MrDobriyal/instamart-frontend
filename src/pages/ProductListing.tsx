@@ -112,7 +112,7 @@ const ProductListing = () => {
                   <Bookmark className="h-3.5 w-3.5 text-muted-foreground" />
                 </button>
                 {product.discount > 0 && (
-                  <span className="absolute top-2 left-2 bg-brand-blue text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded z-10">
+                  <span className="absolute top-2 left-2 bg-blue-700 text-primary-foreground text-[8px] font-bold px-1.5 py-0.5 rounded z-10">
                     {product.discount}% OFF
                   </span>
                 )}

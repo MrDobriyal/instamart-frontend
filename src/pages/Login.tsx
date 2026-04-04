@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/stores/authStore';
 import { Button } from '@/components/ui/button';
@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-brand-blue flex flex-col items-center justify-center px-6 max-w-[430px] mx-auto">
+    <div className="min-h-screen bg-blue-700 flex flex-col items-center justify-center px-6 max-w-[430px] mx-auto">
       <div className="w-full flex flex-col items-center">
         {/* Logo */}
         <div className="mb-8 text-center">
@@ -53,7 +53,7 @@ const Login = () => {
           <Button
             onClick={handleContinue}
             disabled={phone.length !== 10}
-            className="w-full h-12 bg-brand-blue hover:bg-brand-blue/90 text-primary-foreground rounded-xl text-base font-semibold"
+            className="w-full h-12 bg-blue-700 hover:bg-blue-700/90 text-primary-foreground rounded-xl text-base font-semibold"
           >
             Continue
           </Button>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/stores/authStore';
 import { Button } from '@/components/ui/button';
@@ -23,7 +23,7 @@ const OtpVerification = () => {
   }, [otp]);
 
   return (
-    <div className="min-h-screen bg-brand-blue flex flex-col max-w-[430px] mx-auto">
+    <div className="min-h-screen bg-blue-700 flex flex-col max-w-[430px] mx-auto">
       {/* Header */}
       <div className="px-4 pt-4">
         <button onClick={() => navigate('/login')} className="text-primary-foreground">
